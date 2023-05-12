@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <label for="billTotal">Bill Total</label>
+        <span class="input-cont">$<input id="billTotal" type="number"></span>
+        <label for="tip">Tip Percentage</label>
+        <span class="input-cont"><input maxlength="2" max="100" id="tip" type="number">%</span>
+        <div class="cont">
+            <div class="resultContainer people">
+                <p class="people">Number of people</p>
+                <button id="removePerson">-</button>
+                <span id="people">0</span>
+                <button id="addPerson">+</button>
+            </div>
+            <div class="resultContainer totalcont">
+                <p class="total">Total per person</p>
+                <span id="total">$0</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
